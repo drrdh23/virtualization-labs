@@ -1,0 +1,46 @@
+# --- GNS3 / Dynamips : fichiers lourds, propriétaires ou sensibles ---
+*.ghost
+*.image
+*.bin
+*_iomem
+*_nvram
+*_rom
+*_disk*
+*_flash*
+ilt_*
+dynamips_*.txt
+c7200_*_log.txt
+*private-config.cfg
+*.gns3.backup
+project-files/
+
+# --- Captures réseau (peuvent contenir du trafic réel / identifiants) ---
+*.pcap
+*.pcapng
+
+# --- Machines virtuelles ---
+*.vmdk
+*.vmx
+*.vmsd
+*.vmem
+*.vmss
+*.nvram
+*.iso
+*.ova
+*.ovf
+*.qcow2
+
+# --- Secrets ---
+*.key
+*.pem
+*.p12
+*.pfx
+.env
+*secret*
+*password*
+
+# --- Systèmes ---
+desktop.ini
+Thumbs.db
+.DS_Store
+~$*
