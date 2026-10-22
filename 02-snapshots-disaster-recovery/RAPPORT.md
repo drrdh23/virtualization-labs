@@ -14,7 +14,28 @@ tags: Virtualisation, E1A, PPE, VMware, Snapshots, PRA
 | **Auteur** | Rrudhani Deaa|
 | **Date** | 06/10/2026 |
 
-[TOC]
+- [1. Contexte](#1-contexte)
+  - [Objectifs](#objectifs)
+- [2. Qu'est-ce qu'un snapshot ?](#2-quest-ce-quun-snapshot-)
+- [3. Environnement de test](#3-environnement-de-test)
+- [4. Réalisation](#4-réalisation)
+  - [Étape 1 — Création de la VM et installation de l'application](#étape-1--création-de-la-vm-et-installation-de-lapplication)
+  - [Étape 2 — Snapshot et politique de snapshots](#étape-2--snapshot-et-politique-de-snapshots)
+  - [Étape 3 — Simulation d'une mise à jour](#étape-3--simulation-dune-mise-à-jour)
+  - [Étape 4 — Simulation de l'incident](#étape-4--simulation-de-lincident)
+  - [Étape 5 — Restauration et mesure du temps](#étape-5--restauration-et-mesure-du-temps)
+- [5. Résultats des mesures](#5-résultats-des-mesures)
+  - [5.1 Durée d'interruption du service](#51-durée-dinterruption-du-service)
+  - [5.2 Temps de restauration du snapshot](#52-temps-de-restauration-du-snapshot)
+  - [5.3 Analyse](#53-analyse)
+- [6. Plan de reprise d'activité (PRA simplifié)](#6-plan-de-reprise-dactivité-pra-simplifié)
+  - [6.1 Périmètre](#61-périmètre)
+  - [6.2 Objectifs RTO / RPO](#62-objectifs-rto--rpo)
+  - [6.3 Politique de snapshots](#63-politique-de-snapshots)
+  - [6.4 Procédure de reprise](#64-procédure-de-reprise)
+  - [6.5 Rôles](#65-rôles)
+  - [6.6 Limites et améliorations](#66-limites-et-améliorations)
+- [7. Conclusion](#7-conclusion)
 
 ## 1. Contexte
 

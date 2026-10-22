@@ -9,7 +9,40 @@
 
 ## Sommaire
 
-[TOC]
+- [1. Contexte et scénario client](#1-contexte-et-scénario-client)
+- [2. Critères de comparaison](#2-critères-de-comparaison)
+- [3. Matériel et logiciels utilisés](#3-matériel-et-logiciels-utilisés)
+- [4. Préparation du PC hôte](#4-préparation-du-pc-hôte)
+  - [4.1 Noter les caractéristiques du PC](#41-noter-les-caractéristiques-du-pc)
+  - [4.2 Vérifier que Hyper-V est désactivé](#42-vérifier-que-hyper-v-est-désactivé)
+  - [4.3 Télécharger les ISO](#43-télécharger-les-iso)
+  - [4.4 Noter la version de VMware](#44-noter-la-version-de-vmware)
+- [5. Test n°1 : VMware Workstation](#5-test-n1--vmware-workstation)
+  - [5.1 Créer la VM](#51-créer-la-vm)
+  - [5.2 Installer Ubuntu Server (chronométré)](#52-installer-ubuntu-server-chronométré)
+  - [5.3 Préparer la VM pour les mesures](#53-préparer-la-vm-pour-les-mesures)
+- [6. Test n°2 : Proxmox VE](#6-test-n2--proxmox-ve)
+  - [6.1 Créer la VM qui va contenir Proxmox](#61-créer-la-vm-qui-va-contenir-proxmox)
+  - [6.2 Installer Proxmox VE](#62-installer-proxmox-ve)
+  - [6.3 Se connecter à l'interface web](#63-se-connecter-à-linterface-web)
+  - [6.4 Envoyer l'ISO Ubuntu dans Proxmox](#64-envoyer-liso-ubuntu-dans-proxmox)
+  - [6.5 Créer la VM de test dans Proxmox](#65-créer-la-vm-de-test-dans-proxmox)
+  - [6.6 Installer Ubuntu Server (chronométré)](#66-installer-ubuntu-server-chronométré)
+  - [6.7 Préparer la VM pour les mesures](#67-préparer-la-vm-pour-les-mesures)
+  - [Informations de base de la VM](#informations-de-base-de-la-vm)
+  - [Tests de performance avec sysbench](#tests-de-performance-avec-sysbench)
+- [7. Mesures de performance](#7-mesures-de-performance)
+  - [7.A Tests sur TEST-VMWARE (VMware Workstation)](#7a-tests-sur-test-vmware-vmware-workstation)
+  - [7.B Tests sur TEST-PROXMOX (Proxmox VE)](#7b-tests-sur-test-proxmox-proxmox-ve)
+- [8. Résultats des mesures](#8-résultats-des-mesures)
+  - [VMware Workstation](#vmware-workstation)
+  - [Proxmox VE](#proxmox-ve)
+  - [Synthèse](#synthèse)
+- [9. Tableau comparatif des hyperviseurs](#9-tableau-comparatif-des-hyperviseurs)
+- [10. Notation pondérée](#10-notation-pondérée)
+- [11. Recommandation argumentée](#11-recommandation-argumentée)
+- [12. Limites du test et difficultés rencontrées](#12-limites-du-test-et-difficultés-rencontrées)
+- [13. Liste des captures d'écran](#13-liste-des-captures-décran)
 
 
 

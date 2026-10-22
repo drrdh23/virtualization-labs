@@ -8,7 +8,25 @@
 ---
 ### Sommaire
 
-[TOC]
+- [1. Contexte](#1-contexte)
+- [2. Objectifs](#2-objectifs)
+- [3. Choix de l'hyperviseur](#3-choix-de-lhyperviseur)
+- [4. Architecture](#4-architecture)
+  - [4.1 Schéma](#41-schéma)
+  - [4.2 Plan d'adressage](#42-plan-dadressage)
+  - [4.3 Allocation des ressources](#43-allocation-des-ressources)
+- [5. Réalisation](#5-réalisation)
+  - [5.1 SVR-IMPRESSION (serveur d'impression)](#51-svr-impression-serveur-dimpression)
+  - [5.2 SVR-FICHIERS (serveur de fichiers)](#52-svr-fichiers-serveur-de-fichiers)
+  - [5.3 SVR-APPLI (serveur applicatif)](#53-svr-appli-serveur-applicatif)
+- [6. Tests de validation](#6-tests-de-validation)
+- [7. Fiches de configuration](#7-fiches-de-configuration)
+  - [Fiche 1 — SVR-FICHIERS](#fiche-1--svr-fichiers)
+  - [Fiche 2 — SVR-IMPRESSION](#fiche-2--svr-impression)
+  - [Fiche 3 — SVR-APPLI](#fiche-3--svr-appli)
+- [8. Difficultés rencontrées](#8-difficultés-rencontrées)
+- [9. Limites et améliorations possibles](#9-limites-et-améliorations-possibles)
+- [10. Liste des captures](#10-liste-des-captures)
 
 ---
 ## 1. Contexte
